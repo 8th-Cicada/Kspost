@@ -117,23 +117,26 @@
 
 	<div>
 			<div>
-				<p style="color: #fff; font-size: 68px;padding-left: 50px;padding-top: 15px;">&nbsp;>&nbsp;>&nbsp;>&nbsp;<strong>身份证号码查询</strong>&nbsp;<&nbsp;<&nbsp;<&nbsp;</p>
-				<p style="color: #fff; font-size: 50px;padding-left: 430px;padding-top: 8px;">Idcards</p>
+				<p style="color: #121038; font-size: 58px;padding-left: 325px;padding-top: 105px;"><strong>身份证号码查询</strong></p>
+				<p style="color: #121038; font-size: 33px;padding-left: 465px;padding-top: 8px;">Idcards</p>
 				<!-- Page Breadcrumb -->
 	
 		<form action='{:url('Idcards/index')}' method="post">
-					<div style="padding-left: 280px;padding-top: 20px;">
-						<h4 style="float:left;padding-top: 15px;color: #fff; font-size: 38px;">身份证号码：</h4> 
-						<div style="float:left;padding-left: 50px;padding-top: 15px;">
-							<input type="text" name="userid" style="width: 200px;height: 38px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 30px;"/>
+					<div style="display: block;width:500px;height: 50px;margin-left: 250px;margin-top: 20px">
+						<div style="display: block;width:220px;height: 70px;border: 2px solid #8b7500;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;background: #fff">
+						<h4 style="width:200px;height: 50px;margin: 7px;padding: 3px;text-align: center;background-color: #8b7500;border-radius: 3px;color: #fff; font-size: 38px;">身份证号码</h4> 
+						</div>
+
+						<div style="width: 200px;height: 40px;margin-top:-56px;margin-left: 280px;">
+							<input type="text" name="userid" style="width: 300px;height: 42px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 27px;"/>
 						</div>
 					</div>
-
+					
 
 					<div>
-						<div style="float:left; padding-top: 20px;padding-left: 450px;color: #fff; font-size: 38px;">
+						<div style="float:left; padding-top: 30px;padding-left: 435px;color: #fff; font-size: 25px;">
 
-							<input type="submit" value="身份证号码查询" class="btn btn-default"><br/><input type="hidden" name="action" value="idcard" >
+							<button type="submit" style="font-size: 22px;font-weight: normal" class="btn btn-default">身份证号码查询<br/><input type="hidden" name="action" value="idcard" >
 						</div>
 					</div>
 		</form>
@@ -143,7 +146,7 @@
 
 
 		{if condition="$xingbie neq ' '"}
-		<div  style="float:left; padding-top: 10px;padding-left: 455px;color: #fff; font-size: 20px;">
+		<div  style="float:left; padding-top: 20px;padding-left: 400px;color: #000; font-size: 20px;">
 		<p>性别： {$xingbie}</p>
 		<br>
 		<p>出生日期： {$shengri}</p>

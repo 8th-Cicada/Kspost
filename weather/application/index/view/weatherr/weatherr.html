@@ -139,21 +139,21 @@
 	<body id="main" style="background-image:url(__INDEX__/images/bg.jpg);">
 		<div>
 			<div>
-				<p style="color: #fff; font-size: 72px;padding-left: 100px;padding-top: 15px;">&nbsp;>&nbsp;>&nbsp;>&nbsp;<strong>天气查询</strong>&nbsp;<&nbsp;<&nbsp;<&nbsp;</p>
-				<p style="color: #fff; font-size: 58px;padding-left: 400px;padding-top: 8px;"><i class="fa fa-map-marker fa-2x red" style="font-size: 40px;"></i>{$weather1['today']['city']}&nbsp;<b style="font-size: 48px;">{$weather1['sk']['temp']}°C</b></p>
+				<p style="color: #000; font-size: 72px;padding-left: 370px;padding-top: 80px;"><strong>天气预报</strong></p>
+				<p style="color: #000; font-size: 50px;padding-left: 390px;padding-top: 8px;"><i class="fa fa-map-marker fa-2x red" style="font-size: 40px;"></i>{$weather1['today']['city']}&nbsp;<b style="font-size: 48px;">{$weather1['sk']['temp']}°C</b></p>
 				<!-- Page Breadcrumb -->
 				<div class="col-lg-3 col-md-12">
 
                             <div style="padding-top: 10px">
                                 {volist name="weather1['future']" id="vo" offset="0" length="7"}
-                                <p style="color: #fff; font-size: 30px;padding-top: 8px;padding-left: 100px;">
+                                <p style="color: #000; font-size: 30px;padding-top: 8px;padding-left: 100px;">
                                 	<b><?php $data=array();
                                 		$data=$vo['date'];
                                 		echo $data[4].$data[5].'月'.$data[6].$data[7].'日';
                                 		?><!-- {:$vo['date']} --></b>
-                                	<b style="padding-left: 50px"><span class="label label-primary">{:$vo['week']}</span></b>
-                                	<b style="padding-left: 100px">{:$vo['temperature']}</b>
-                                	<b style="display: block;width:180px;height: 40px;font-size: 25px;text-align: center;background-color: #fb0;border-radius: 3px;margin: -40px 0px 0px 600px">{:$vo['weather']}</b>
+                                	<b style="padding-left: 80px"><span class="label label-primary">{:$vo['week']}</span></b>
+                                	<b style="padding-left: 80px">{:$vo['temperature']}</b>
+                                	<b style="display: block;width:180px;height: 40px;font-size: 25px;text-align: center;background-color: #fb0;border-radius: 3px;margin: -40px 0px 0px 600px;color: #fff;">{:$vo['weather']}</b>
                                 </p>
                                 <!-- <br> -->
                                 {/volist}

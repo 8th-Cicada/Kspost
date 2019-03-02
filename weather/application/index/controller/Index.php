@@ -5,8 +5,8 @@ class Index extends Common
 {
     public function index()
     {
- 		require(ROOT_PATH . 'vendor/weather.php');//引入PHP EXCEL类
-        $appkey = '0308ec65c3b7a90d341079f7ee3fc754';
+    	require(ROOT_PATH . 'vendor/weather.php');//引入PHP EXCEL类
+        $appkey = 'ce863d0fcc3ff9e405c251b8239de8a3';
         $weather = new weather($appkey);
 
 
