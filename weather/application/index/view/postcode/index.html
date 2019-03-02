@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html> 
+
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="600000">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/animate.css">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/font-awesome.min.css">
+<link href="css/video-js.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/style.css">
+<link rel="stylesheet" type="text/css" href="__INDEX__/css/tianqi.css">
+<link href="__INDEX__/css/expander.css" rel="stylesheet" />
+<link href="__INDEX__/css/theme.css" rel="stylesheet" />
+<link rel="stylesheet" href="__INDEX__/css/animate.min.css" />
+<!-- 动画效果 -->
+<link rel="stylesheet" href="__INDEX__/css/common.css" />
+<!-- 页面基本样式 -->
+<script src="__INDEX__/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="__INDEX__/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__INDEX__/js/move.js"></script>
+<script src="__INDEX__/js/videojs-ie8.min.js"></script>
+<script src="__INDEX__/js/style.js" type="text/javascript"></script>
+<script src="__INDEX__/js/jquery-latest.min.js" type="text/javascript"></script>
+<script src="__INDEX__/js/expander.min.js" type="text/javascript"></script>
+
+
+	<head>
+	<meta charset="utf-8">
+		<title>邮编查询</title>
+
+
+		<style>
+	.pr-select,
+	.please-choose,
+	.select-ul li {
+		　　width: 100%;
+	}
+	.select-ult li {
+		　　width: 100%;
+	}
+	.pr-select {
+		　　position: relative;
+	}
+	.pr-selectt {
+		　　position: relative;
+	}
+	.please-choose {
+		　　border-radius: 5px;
+		　　border: 1px solid #C4C4C4;
+		　　height: 28px;
+		　　line-height: 28px;
+	}
+	.please-chooset {
+		　　border-radius: 5px;
+		　　border: 1px solid #C4C4C4;
+		　　height: 28px;
+		　　line-height: 28px;
+	}
+	.div_select {
+		　　position: relative;
+	}
+	.div_selectt {
+		　　position: relative;
+	}
+	.jack-tipping-cam {
+		　　position: absolute;
+		　　top: 10px;
+		　　right: 10px;
+		　　font-style: normal;
+		　　width: 0;
+		　　height: 0;
+		　　border: 5px solid transparent;
+		　　border-top-color: #000;
+	}
+	.select-ul {
+		　　list-style: none;
+		　　display: none;
+		　　width: 100%;
+		　　position: absolute;
+		　　left: 0;
+		　　top: 0;
+		　　margin: 0;
+		　　padding: 0;
+	}
+	.select-ult {
+		　　list-style: none;
+		　　display: none;
+		　　width: 100%;
+		　　position: absolute;
+		　　left: 0;
+		　　top: 0;
+		　　margin: 0;
+		　　padding: 0;
+	}
+	.select-ul li {
+		　　line-height: 28px;
+		　　width: 100%;
+	}
+	.select-ult li {
+		　　line-height: 28px;
+		　　width: 100%;
+	}
+	.select-blue {
+		　　background: #09F;
+	}
+</style>
+
+
+
+	</head>
+
+	<body id="main" style="background-image:url(__INDEX__/images/bg.jpg);">
+
+	<div>
+			<div>
+				<p style="color: #fff; font-size: 68px;padding-left: 70px;padding-top: 15px;">&nbsp;>&nbsp;>&nbsp;>&nbsp;<strong>邮编查询地名</strong>&nbsp;<&nbsp;<&nbsp;<&nbsp;</p>
+				<p style="color: #fff; font-size: 50px;padding-left: 390px;padding-top: 8px;">Postcode</p>
+				<!-- Page Breadcrumb -->
+	
+		<form action='{:url('Postcode/index')}' method="post">
+					<div style="padding-left: 300px;padding-top: 20px;">
+						<h4 style="float:left;padding-top: 15px;color: #fff; font-size: 38px;">邮编号：</h4> 
+						<div style="float:left;padding-left: 50px;padding-top: 15px;">
+							<input type="text" name="pcodeid" style="width: 200px;height: 38px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 30px;"/>
+						</div>
+					</div>
+
+
+					<div>
+						<div style="float:left; padding-top: 80px;padding-left: 430px;color: #fff; font-size: 38px;position: absolute;">
+
+							<input type="submit" value="邮编查询地址" class="btn btn-default"><br/><input type="hidden" name="action" value="pcodeid" >
+						</div>
+					</div>
+		</form>
+
+
+		{if condition="$province1 neq ' '"}
+		<div  style="float:left; padding-top: 160px;padding-left: 350px;color: #fff; font-size: 20px;position: absolute;">
+		省份:{$province1}  地级市:{$city1}  地区:{$district1}</div>
+		{/if}
+
+		</div>
+		</div>
+
+	</body>
+</html>
