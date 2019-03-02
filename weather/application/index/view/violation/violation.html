@@ -34,39 +34,51 @@
 	<body id="main" style="background-image:url(__INDEX__/images/bg.jpg);">
 		<div>
 			<div>
-				<p style="color: #fff; font-size: 72px;padding-left: 70px;padding-top: 15px;">&nbsp;>&nbsp;>&nbsp;>&nbsp;<strong>交通违章查询</strong>&nbsp;<&nbsp;<&nbsp;<&nbsp;</p>
-				<p style="color: #fff; font-size: 50px;padding-left: 350px;padding-top: 8px;">Trafic Violation</p>
+				<p style="color: #000; font-size: 72px;padding-left: 340px;padding-top: 80px;"><strong>交通违章查询</strong></p>
+				<p style="color: #000; font-size: 50px;padding-left: 370px;padding-top: 8px;">Trafic Violation</p>
 				<!-- Page Breadcrumb -->
 				<form role="form" action="{:url('violation')}" method="post">
-					<div style="float: left;padding-left: 310px;">
-						<h4 style="float:left;padding-top: 15px;color: #fff; font-size: 38px;">车牌号</h4> 
-						<div style="float:left;padding-left: 100px;padding-top: 15px;">
-							<input placeholder="" name="carno"  type="text" style="width: 200px;height: 38px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 30px;" required="" autocomplete="off">
+					<div style="display: block;width:500px;height: 50px;margin-left: 250px;margin-top: 20px">
+						<div style="display: block;width:200px;height: 70px;border: 2px solid #8b7500;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;background: #fff">
+							<h4 style="width:180px;height: 50px;margin: 7px;padding: 3px;text-align: center;background-color: #8b7500;border-radius: 3px;color: #fff; font-size: 38px;">车牌号</h4>
+						</div> 
+
+						<div style="width: 200px;height: 40px;margin-top:-56px;margin-left: 330px;">
+							<input placeholder="" name="carno"  type="text" required="" autocomplete="off" style="width: 200px;height: 45px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 30px;">
 						</div>
 					</div>
-					<div style="float: left;padding-left: 310px;">
-						<h4 style="float:left;padding-top: 8px;color: #fff; font-size: 38px;">发动机号</h4> 
-						<div style="float:left;padding-left: 60px;padding-top: 8px;">
-							<input placeholder="" name="engineto"  type="text" style="width: 200px;height: 38px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8;font-size: 30px;" autocomplete="off">
+
+					<div style="display: block;width:500px;height: 50px;margin-left: 250px;margin-top: 38px">
+						<div style="display: block;width:200px;height: 70px;border: 2px solid #8b7500;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;background: #fff">
+							<h4 style="width:180px;height: 50px;margin: 7px;padding: 3px;text-align: center;background-color: #8b7500;border-radius: 3px;color: #fff; font-size: 38px ;">发动机号</h4>
+						</div>
+
+						<div style="width: 200px;height: 40px;margin-top:-55px;margin-left: 330px;">
+							<input placeholder="" name="engineto"  type="text" autocomplete="off" style="width: 200px;height: 45px;border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8;font-size: 30px;" >
 						</div>
 					</div>
-					<div style="float: left;padding-left: 310px;">
-						<h4 style="float:left;padding-top: 8px;color: #fff; font-size: 38px;">车架号</h4> 
-						<div style="float:left;padding-left: 100px;padding-top: 8px;">
-							<input placeholder="" name="classno"  type="text" style="width: 200px;height: 38px; border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8; font-size: 30px;" autocomplete="off">
+
+					<div style="display: block;width:500px;height: 50px;margin-left: 250px;margin-top: 38px">
+						<div style="display: block;width:200px;height: 70px;border: 2px solid #8b4513;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;background: #fff">
+							<h4 style="width:180px;height: 50px;margin: 7px;padding: 3px;text-align: center;background-color: #8b4513;border-radius: 3px;color: #fff; font-size: 38px">车架号</h4>
 						</div>
-					</div>          
+
+						<div style="width: 200px;height: 40px;margin-top:-54px;margin-left: 330px;">
+							<input placeholder="" name="classno"  type="text" autocomplete="off" style="width: 200px;height: 45px;border: 1px solid #999; border-bottom-color: #d8d8d8; border-right-color: #d8d8d8;font-size: 30px;" >
+						</div>
+					</div>
+
 					<div>
-						<div style="float:left; padding-top: 10px;padding-left: 480px;color: #fff; font-size: 38px;">
-							<button type="submit" class="btn btn-default">查询违章</button>
+						<div style="display: block;width:160px;height: 60px;margin-left: 450px;margin-top: 50px;margin-bottom: 50px">
+							<button type="submit" style="font-size: 28px;" class="btn btn-default"><strong>查询违章</strong></button>
 						</div>
 					</div>
 				</form>
 				{if condition="$act neq ' '"}
-				<h5  style="float:left; padding-top: 10px;padding-left: 100px;color: #fff; font-size: 20px;">车牌为{$carnu}的车辆在{$date}时因{$act}违章，扣{$fen},罚款{$money}元</h5>
+				<h5  style="float:left;padding-left: 220px;margin-top: -40px; color: #000; font-size: 38px;"><strong>车牌为{$carnu}的车辆在{$date}时因{$act}违章，扣{$fen},罚款{$money}元</strong></h5>
 				{/if}
 				{if condition="$reason neq ' '"}
-				<h5  style="float:left; padding-top: 10px;padding-left: 300px;color: #fff; font-size: 20px;">{$reason}</h5>
+				<h5  style="float:left;padding-left: 220px;margin-top: -40px; color: #000; font-size: 38px;"><strong>{$reason}</strong></h5>
 				{/if}
 			</div>
 		</div>

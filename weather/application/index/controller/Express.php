@@ -8,7 +8,7 @@ class Express extends Common
     public function express()
     {
     	require(ROOT_PATH . 'vendor/exp.php');//引入PHP EXCEL类
-        $appkey = '4817c002a8bcc7ca3a2ff005f2de2b81';
+        $appkey = '776ae0554edcd90740c1d6217ce59717';
         $exp = new exp($appkey);
 
         $company='';
@@ -50,6 +50,7 @@ class Express extends Common
             'number'=>$number,
             'list'=>$list
         ));
+        
         return view();
     }
 }

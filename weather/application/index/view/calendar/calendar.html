@@ -39,38 +39,36 @@
 
 		<form class="form-horizontal" role="form" action="{:url('calendar')}" method="post">
 		<div class="form-group" style="color: #fff;text-align: center;height: 600px;">
-			<p style="height: 100px;line-height: 200px;font-size: 50px;display: block;">
+			<p style="display: block;height: 100px;line-height: 200px;font-size: 50px;text-shadow: 2px 3px 6px #000;">
 				{$date} {$weekday}
-				<!-- {$date} {$weekday} -->
 			</p>
 
-			<p style="position: relative;width: 100px;margin: 50px auto;font-size: 68px;background: #fb0;border-radius: 3px;box-shadow: 1px 2px 5px rgba(0,0,0,.1), -1px 2px 5px rgba(0,0,0,.1);">
+			<p style="position: relative;width: 100px;margin: 50px auto;font-size: 78px;background: #fb0;border-radius: 3px;box-shadow: 1px 2px 5px rgba(0,0,0,.1), -1px 2px 5px rgba(0,0,0,.1);">
 				{$nowdays}
-				<!-- {$nowdays} -->
 			</p>
 
-			<p style="display: block;font-size: 48px;margin: -40px auto;">
-				<span>{$lunar}<!-- {$lunar} --></span>
-				<span>{$lunarYear}  [{$animalsYear}年]<!-- {$lunarYear} 【{$animalsYear}年】 --></span>
+			<p style="display: block;font-size: 48px;margin: -40px auto;text-shadow: 2px 2px 5px #000;">
+				<span>{$lunar}</span>
+				<span>{$lunarYear}  [{$animalsYear}年]</span>
 			</p>
 
 
 			<div style="display: block;">
-				<p style="margin: 50px auto 0;width: 540px;border-top: 3px solid #94c9ff;padding-top: 10px;"></p>
-				<p style="width: 62px;height: 60px;background: #fff;margin:auto 350px;padding: 5px 5px;border: 1px solid #5fafff;color: #333;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;">
+				<p style="margin-top: 80px;margin-left: 245px;width: 600px;border-top: 5px solid #94c9ff;padding-top: 10px;"></p>
+				<p style="width: 62px;height: 60px;background: #fff;margin:10px 0px 0px 350px;padding: 5px 5px;border: 1px solid #5fafff;color: #333;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;">
 					<span style="position: relative;display: block;min-height: 30px;text-align: left;">
 						<i style="display: block;position: absolute;width: 50px;height: 50px;background: #67b3ff;font: 40px/44px 'Microsoft Yahei';text-shadow: 2px 2px 1px rgba(0,0,0,.1);text-align: center;color: #fff;">宜</i>
 			
-				<p style="width: 300px;margin: -60px 0px 0px 430px;font-size: 25px;color: #000;text-align: left"><!-- {$suit} -->{$suit}</p>
+				<p style="width: 300px;margin: -60px 0px 0px 430px;font-size: 25px;color: #000;text-align: left">{$suit}</p>
 
-				<p style="width: 62px;height: 60px;background: #fff;margin:35px 0px 0px 350px;padding: 5px 5px;border: 1px solid #5fafff;color: #333;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;">
+				<p style="width: 62px;height: 60px;background: #fff;margin:35px 0px 0px 350px;padding: 5px 5px;border: 1px solid #ff5040;color: #333;box-shadow: 4px 4px rgba(0,0,0,.05);z-index: 100;">
 					<span style="position: relative;display: block;min-height: 30px;text-align: left;">
 						<i style="display: block;position: absolute;width: 50px;height: 50px;background: #ff5040;font: 40px/44px 'Microsoft Yahei';text-shadow: 2px 2px 1px rgba(0,0,0,.1);text-align: center;color: #fff;">忌</i>
 						
 					
 					</span>
 				</p>
-				<p style="margin: -60px 0px 0px 430px;font-size: 25px;color: #000;text-align: left;"><!-- {$avoid} -->{$avoid}</p>
+				<p style="margin: -60px 0px 0px 430px;font-size: 25px;color: #000;text-align: left;">{$avoid}</p>
 
 			</div>
 
