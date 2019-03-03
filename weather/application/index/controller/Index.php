@@ -24,6 +24,7 @@ class Index extends Common
         }else{
             echo $cityWeatherResult['error_code'].":".$cityWeatherResult['reason'];
         }
+        
         return view();
     }
 }
